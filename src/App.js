@@ -30,8 +30,13 @@ function App() {
         </div>
         </div>
         <div className='b gridCell'>
+          <a href="#projects">Projects</a>
         </div>
         <div className='c gridCell'>
+          <h3>Contact</h3>
+          <h4>mwongsuwan@gmail.com</h4>
+          <h4>801.833.5016</h4>
+          <h4>github.com/m-wongsuwan</h4>
         </div>
         <div className='d gridCell'>
 
@@ -72,7 +77,7 @@ function App() {
         <div className='p skill reveal gridCell'>
           <h1 className='skillText'>Teaching Experience</h1>
         </div>
-        <div className='q gridCell'>
+        <div className='q gridCell' id='projects'>
         </div>
       </div>
     </div>
