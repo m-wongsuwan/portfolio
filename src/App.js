@@ -1,4 +1,5 @@
 import './App.css';
+import portrait from './images/portrait.JPG'
 
 function App() {
 
@@ -21,17 +22,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Morgan Wongsuwan</h1>
       <div className='App--gridContainer'>
         <div className='a gridCell'>
+          <h1>Morgan Wongsuwan</h1>
           <div className='imgContainer'>
-          {/* <img className='portrait' src={portrait} alt="Portrait of Morgan Wongsuwan"/> */}
-
+          <img className='portrait' src={portrait} alt="Portrait of Morgan Wongsuwan"/>
+          <p>Building a better world one line of code at a time.</p>
+          </div>
         </div>
-        </div>
-        <div className='b gridCell'>
-          <a href="#projects">Projects</a>
-        </div>
+        <a href='#projects' className='gridCell b'>
+          <div className=''>
+            <h3>Jump to</h3>
+            <h1>Projects</h1>
+          </div>
+        </a>
         <div className='c gridCell'>
           <h3>Contact</h3>
           <h4>mwongsuwan@gmail.com</h4>
@@ -41,14 +45,8 @@ function App() {
         <div className='d gridCell'>
 
         </div>
-        <div className='e gridCell'>
-
-        </div>
-        <div className='f reveal gridCell shadow'>
-
-        </div>
-        <div className='g reveal gridCell'>
-
+        <div className='e gridCell aboutMe'>
+          <p>Full Stack Devloper using their skills to make the world a better place for all.</p>
         </div>
         <div className='h skills reveal gridCell'>
           <h1>Skills</h1>
@@ -78,7 +76,29 @@ function App() {
           <h1 className='skillText'>Teaching Experience</h1>
         </div>
         <div className='q gridCell' id='projects'>
+          <h1>Projects</h1>
         </div>
+        <div className='f reveal gridCell shadow projPic'>
+
+        </div>
+        <div className='g reveal gridCell projExplanation'>
+          <h1>Magic: The Gathering Hub</h1>
+          <p>Developed an app to allow Magic: The Gathering Players to search for cards, create decks, and test their MTG knowledge.</p>
+          <p className='projSkills'>React, JavaScript, HTML, CSS, Node.js, Git</p>
+          <button>GitHub</button>
+          <button>Live Demo</button>
+        </div>
+        <div className='s reveal gridCell shadow projPic'>
+
+        </div>
+        <div className='r reveal gridCell projExplanation'>
+          <h1>Magic: The Gathering Hub</h1>
+          <p>Developed an app to allow Magic: The Gathering Players to search for cards, create decks, and test their MTG knowledge.</p>
+          <p className='projSkills'>React, JavaScript, HTML, CSS, Node.js, Git</p>
+          <button>GitHub</button>
+          <button>Live Demo</button>
+        </div>
+
       </div>
     </div>
   );

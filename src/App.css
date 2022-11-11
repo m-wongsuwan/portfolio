@@ -3,9 +3,14 @@
   padding: 0;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   box-sizing: border-box;
+
 }
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  border: 6px solid;
+  border-image-source: linear-gradient(90deg,#f7c9c9,#fa709a 70%);
+  border-image-slice: 1;
 }
 @keyframes colorBreathBG {
   0% {background-color: rgb(50,57,73);}
@@ -14,14 +19,15 @@ html {
 }
 
 body {
-  background-color: black;
-  animation-name: colorBreathBG;
+  background-color: white;
+  /* animation-name: colorBreathBG; */
   animation-duration: 12s;
   /* animation-delay: 3s; */
   animation-iteration-count: infinite;
 }
 .App {
   text-align: center;
+  padding: 3px
 }
 /* @keyframes sideScroll {
   from {transform: translateX(150)}
@@ -35,8 +41,10 @@ body {
 .portrait {
   position: relative;
   height: 200px;
+  width: 200px;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 8px solid black;
+  object-fit: cover;
   /* animation-name: sideScroll;
   animation-duration: 4s;
   transition: 2s all ease; */
@@ -47,31 +55,34 @@ body {
   display: grid;
   /* width: 100%; */
   grid-template-areas: 
-    "a a"
-    "a a"
-    "b c"
-    "d d"
-    "e e"
-    "f f"
-    "g g"
-    "h h"
-    "q q";
-  grid-template-rows: 250px 250px 250px 250px 160px 200px 100px 100px 400px;
-  grid-template-columns: 1fr 1fr;
+  "a a b c"
+  "a a d d"
+  "e e e e"
+  "h h h h"
+  "i j k l"
+  "m n o p"
+  "q q q q"
+  "f f g g"
+  "f f g g"
+  "r r s s"
+  "r r s s";
+  grid-template-rows: 250px 250px 600px 250px 160px 200px 100px 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .shadow {
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
 .gridCell {
-  border-radius: 50px;
-  margin: 5px;
+  border-radius: 30px;
+  margin: 3px;
   transition-duration: 4s;
+  padding: 10px
 }
 .shadow:hover {
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
 }
 .a {
-  background-color: rgb(0, 21, 20);
+  background-color: rgb(202, 216, 222);
   grid-area: a;
   
 }
@@ -88,6 +99,13 @@ body {
   /* animation-delay: 3s; */
   /* animation-iteration-count: infinite; */
   grid-area: b;
+}
+.b {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: 700px;
+  overflow: hidden;
 }
 .c {
   background-color: rgb(202, 216, 222);
@@ -128,7 +146,7 @@ body {
   opacity: 1;
 }
 .g { 
-  background-color: white;
+  background-color: antiquewhite;
   grid-area: g;
   position: relative;
   transform: translateX(-650px);
@@ -216,21 +234,9 @@ body {
   grid-area: q;
   background-color: aliceblue;
 }
-
-@media screen  and (min-width: 900px) {
-  .App--gridContainer {
-    grid-template-areas: 
-    "a a b c"
-    "a a d d"
-    "e e e e"
-    "f f g g"
-    "f f g g"
-    "h h h h"
-    "i j k l"
-    "m n o p"
-    "q q q q"
-    ;
-    grid-template-rows: 250px 250px 700px 250px 200px 80px 100px 100px 400px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  } 
+.r {
+  grid-area: r;
+}
+.s {
+  grid-area: s;
 }
