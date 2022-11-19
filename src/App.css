@@ -15,10 +15,13 @@
 }
 body {
   /* animation-name: colorBreathBG; */
-  background-color: black;
+  background-color: #020103;
+  /* background-image: url('https://i.pinimg.com/originals/59/db/f3/59dbf3658e096e5793c88384aa4b6063.jpg');
+  background-size: 5%; */
   animation-duration: 112s;
   animation-iteration-count: infinite;
   color: white;
+
 }
 html {
   scroll-behavior: smooth;
@@ -33,6 +36,9 @@ h1, h2, h3 {
 }
 .App {
   width: 100%
+}
+.sideNav {
+  display: none;
 }
 nav {
   position: fixed;
@@ -93,8 +99,14 @@ a .active {
   text-align: center;
   line-height: 1.5;
 }
+.links a {
+  margin: 10px;
+}
+.links {
+  padding-top: 10px;
+}
 .introLeftBottom h1 {
-  font-size: 5vh;
+  font-size: 50px;
   margin: 40px 0px;
 }
 .portrait {
@@ -105,12 +117,9 @@ a .active {
   border: 6px #FAC748 dashed;
   background-size: 10px 3px;
 }
-.linkedTo {
-  /* padding-top: 120px; */
-}
 .bigIntro {
   /* height: 600px; */
-  margin-top: 90px;
+  /* margin-top: 90px; */
   padding: 0px 20px;
 }
 .aboutMe {
@@ -120,14 +129,24 @@ a .active {
   margin: 0px 30px
 }
 .aboutMe h1 {
-  font-size: 40px;
+  font-size: 70px;
+
 }
 .aboutMe p {
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 1.6;
 }
 .projects {
   margin: 0 30px;
   padding-top: 20px;
+}
+.skillsP {
+  color: #f1a26d;
+  font-weight: 700;
+  text-align: center;
+}
+.projects h1 {
+  font-size: 70px;
 }
 .reveal {
   /* height: 400px; */
@@ -147,32 +166,53 @@ a .active {
 }
 
 .projText {
-  padding: 4em;
+  padding: 40px 20px 20px;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr 1.5fr 1fr;
+  /* background-color: gray; */
 }
 .projImg {
   height: 400px;
   background-position: center;
   background-size: 100%;
   object-fit: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); */
   transition: 800ms all ease;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
+.projectRow {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 20px;
+}
 .project1Img {
   background-image: url('./images/notable.png');
-  /* background-position: top; */
 }
 .project2Img {
   background-image: url('./images/shortdlepng.png');
 }
 .project3Img {
   background-image: url('./images/magichub.PNG');
+  /* background-color: white; */
 }
 .projImg:hover {
   background-size: 105%;
   cursor: pointer;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0);
+}
+.proj-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.proj-buttons button {
+  width: 180px;
+  font-size: 24px;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+.codeBtn {
+  background-color: #FAC748;
 }
 .contact {
   margin-top: 150px;
@@ -202,19 +242,21 @@ a .active {
   .aboutMe {
     margin: 0
   }
+  .aboutMe h1, .projects h1 {
+    margin-left: -15px;
+  }
   .projects {
     margin: 0
   }
 }
 @media screen and (min-width: 1395px) {
   
-  nav {
+  .sideNav {
     display: grid;
     position: fixed;
     right: 20px;
     /* top: 25vh; */
-    height: 220px;
-    margin-top: 25px;;
+    margin-top: 15px;
     width: 50px;
     margin-right: 0;
     width: 100px;
@@ -222,10 +264,10 @@ a .active {
     border-radius: 20px;
     padding: 10px;
   }
+  .topNav {
+    display: none;
+  }
   .navIcon {
     margin: 5px auto;
   }
-}
-@media screen and (max-height: 700px) {
-
 }
