@@ -1,0 +1,20 @@
+.aboutMe {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin: 0px 30px
+  }
+  .aboutMe h1 {
+    font-size: 70px;
+  
+  }
+  .aboutMe p {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 1200px) {
+    .aboutMe {
+      margin: 0;
+      height: 600px;
+    }
+  }

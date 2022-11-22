@@ -1,5 +1,5 @@
 import React from "react";
-import notableImg from '../images/notable.png'
+import '../css/components/projects.css'
 
 export default function Projects() {
 
@@ -17,8 +17,12 @@ export default function Projects() {
             <p>Developed a space for singles to meet potential partners. Full user authentication functionality. Users are able to create an account, filter by age and gender preference, post notes on other profiles, and send messages.</p>
             <p className="skillsP">React, CSS, HTML, Javascript, MongoDB, Express, User Authentication</p>
             <div className="proj-buttons">
-              <button className="codeBtn" >Code</button>
-              <button className="demoBtn" >Live Demo</button>
+              <a href="https://github.com/m-wongsuwan/notable/" target="_blank" rel="noreferrer noopener">
+                <button className="codeBtn" >Code</button>
+              </a>
+              <a href="https://notabledating.herokuapp.com" target="_blank" rel="noreferrer noopener">
+                <button className="demoBtn" >Live Demo</button>
+              </a>
             </div>
           </div>
         </div>
@@ -33,8 +37,12 @@ export default function Projects() {
             <p>Produced a Wordle-like app for users to enjoy. Javascript handles game logic and a responsive keyboard display that changes based on previous guesses. Complete CRUD functionality for posting, updating, reading, and deleting high scores.</p>
             <p className="skillsP">React, CSS, HTML, Javascript, CRUD, MongoDB, Express, Git</p>
             <div className="proj-buttons">
-              <button className="codeBtn" >Code</button>
-              <button className="demoBtn" >Live Demo</button>
+              <a href="https://github.com/m-wongsuwan/shortdle" target="_blank" rel="noreferrer noopener">
+                <button className="codeBtn" >Code</button>
+              </a>
+              <a href="http://shortdle.herokuapp.com/game" target="_blank" rel="noreferrer noopener">
+                <button className="demoBtn" >Live Demo</button>
+              </a>
             </div>
           </div>
         </div>
@@ -50,8 +58,12 @@ export default function Projects() {
             <p>Developed a Magic: The Gathering fan site that makes use of the Scryfall API. Users are able to search Magic's entire card catalogue to build decks for multiple formats that can be pasted directly into either the Magic Arena or Magic Online platforms, play a quiz game that tests their card recognition skills, and pull up random cards just for the heck of it. </p>
             <p className="skillsP">React, CSS, HTML, Javascript, APIs</p>
             <div className="proj-buttons">
+            <a href="https://github.com/m-wongsuwan/level4/tree/main/lvl4capstone" target="_blank" rel="noreferrer noopener">
               <button className="codeBtn" >Code</button>
-              <button className="demoBtn" >Live Demo</button>
+            </a>
+              <a href="https://themagichub.surge.sh/" target="_blank" rel="noreferrer noopener">
+                <button className="demoBtn" >Live Demo</button>
+              </a>
             </div>
           </div>
         </div>

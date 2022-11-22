@@ -1,0 +1,52 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-sizing: border-box;
+}
+:root {
+  --highlight: #f1a26d;
+  --standard: rgba(255, 255, 255, 0.5)
+}
+body {
+  background-color: #020103;
+  animation-duration: 112s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  border: 7px solid;
+  border-image-source: linear-gradient(90deg, #FAC748,#f1a26d 70%);
+  border-image-slice: 1;
+}
+h1, h2, h3 {
+  font-family: 'Martel', serif;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+.App {
+  width: 100%
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  margin-top: 150px;
+  height: 1000px
+}
+
+
+@media screen and (min-width: 1200px) {
+  .app-nonFooter {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}

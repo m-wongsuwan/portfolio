@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../css/components/nav.css'
 import home from '../images/home.png'
 import folder from '../images/folder.png'
 import about from '../images/about.png'
@@ -30,12 +31,12 @@ export default function Nav() {
 
     return (
         <>
-        <nav className='sideNav' style={{top: `${scrollPercentRounded * ((window.innerHeight - 315)/window.innerHeight)}vh`}}>
+        <nav className='sideNav' style={{top: `${scrollPercentRounded * ((window.innerHeight - 335)/window.innerHeight)}vh`}}>
         {/* <nav className='sideNav' style={returnSideNavStyle()}> */}
             <a href='#top' onClick={()=> setHighlightNav('#top')} ><img src={home} alt='home' className={highlightNav === '#top' ? 'active navIcon' : 'navIcon'}/></a>
             <a href='#aboutMe' onClick={()=> setHighlightNav('#aboutMe')}><img src={about} alt='about'  className={highlightNav === '#aboutMe' ? 'active navIcon' : 'navIcon'}/></a>
             <a href='#projects' onClick={()=> setHighlightNav('#projects')} ><img src={folder} alt='folder' className={highlightNav === '#projects' ? 'active navIcon' : 'navIcon'}/></a>
-            <a href='#contact' onClick={()=> setHighlightNav('#contact')}><img src={contact} alt='home' className={highlightNav === '#contact' ? 'active navIcon' : 'navIcon'}/></a>
+            <a href='#contact-form' onClick={()=> setHighlightNav('#contact')}><img src={contact} alt='home' className={highlightNav === '#contact' ? 'active navIcon' : 'navIcon'}/></a>
             {/* <p>{scrollPercentRounded}</p>
             <p>{window.innerHeight}</p>
             <p>{window.scrollY}</p> */}
@@ -44,10 +45,7 @@ export default function Nav() {
             <a href='#top' onClick={()=> setHighlightNav('#top')} ><img src={home} alt='home' className={highlightNav === '#top' ? 'active navIcon' : 'navIcon'}/></a>
             <a href='#aboutMe' onClick={()=> setHighlightNav('#aboutMe')}><img src={about} alt='about'  className={highlightNav === '#aboutMe' ? 'active navIcon' : 'navIcon'}/></a>
             <a href='#projects' onClick={()=> setHighlightNav('#projects')} ><img src={folder} alt='folder' className={highlightNav === '#projects' ? 'active navIcon' : 'navIcon'}/></a>
-            <a href='#contact' onClick={()=> setHighlightNav('#contact')}><img src={contact} alt='home' className={highlightNav === '#contact' ? 'active navIcon' : 'navIcon'}/></a>
-            <p>{scrollPercentRounded}</p>
-            <p>{window.innerHeight}</p>
-            
+            <a href='#contact-form' onClick={()=> setHighlightNav('#contact-form')}><img src={contact} alt='home' className={highlightNav === '#contact-form' ? 'active navIcon' : 'navIcon'}/></a>            
         </nav>
         </>
     )

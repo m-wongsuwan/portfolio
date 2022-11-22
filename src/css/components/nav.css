@@ -1,0 +1,55 @@
+.sideNav {
+    display: none;
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  top: 20px;
+  right: 50%;
+  margin-right: -150px;
+  width: 300px;
+  z-index: 1;
+  /* background-color: #FAC748; */
+  border-radius: 20px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navIcon {
+    background-color: var(--standard);
+    border-radius: 50%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+a .active {
+    background-color: var(--highlight);
+}
+.navIcon:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1395px) {
+
+.sideNav {
+    display: grid;
+    position: fixed;
+    right: 20px;
+    /* top: 25vh; */
+    margin-top: 15px;
+    width: 50px;
+    margin-right: 0;
+    width: 100px;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 5px;
+}
+.topNav {
+    display: none;
+}
+.navIcon {
+    margin: 5px auto;
+}
+}
+  

@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/components/intro.css'
 import portrait from '../images/portrait.JPG'
 import hitgub from '../images/hitgub.svg'
 import linkedin from '../images/linkedin.svg'
@@ -7,7 +8,7 @@ import contact from '../images/email.svg'
 export default function Intro() {
 
     return (
-        <div className='bigIntro linkedTo' id='home' style={{height: window.innerHeight, marginTop: window.innerHeight * .2}}>
+        <div className='bigIntro linkedTo' id='home'>
             <div>
                 <div className='introGrid'>
 
